@@ -156,7 +156,7 @@ header .logo {
     right: 0;
     top: 50%;
     transform: translate(0, -50%);
-    writing-mode: sideways-lr;
+    writing-mode: vertical-lr;
     color:#ffffff;
     font-weight: 700;
     text-decoration: none;
