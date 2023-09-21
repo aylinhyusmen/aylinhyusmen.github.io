@@ -1,0 +1,99 @@
+/* Reset some default styles */
+body, h1, p {
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white; /* Changed text color to white */
+}
+
+body {
+    overflow: auto;
+}
+
+/* Background styling */
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.background.background-0 {
+    background: linear-gradient(to left top, rgb(0, 128, 192), rgba(0, 128, 192, 0) 70%);
+}
+
+.background.background-1 {
+    background: linear-gradient(126deg, rgb(0, 102, 153), rgba(0, 102, 153, 0) 70%);
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Main content container */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Title styling */
+.title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.sub-title, .description {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Contact section styling */
+.contact .list, .activities .list, .projects .list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.button {
+    text-decoration: none;
+    border: 2px solid white; /* Changed to white border */
+    padding: 10px 20px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    color: white; /* Changed text to white */
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: white; /* Background turns white */
+    color: rgb(173, 216, 230); /* Text turns baby blue */
+}
+
+/* Activities and Projects section styling */
+.item {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.name, .mini-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.date {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 5px 8px;
+    font-weight: 700;
+    color: rgb(173, 216, 230); /* Baby blue color */
+    background: #fff;
+}
